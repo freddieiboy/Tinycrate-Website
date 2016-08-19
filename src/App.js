@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { AppleDownload } from './AppleDownload';
 import { GoogleDownload } from './GoogleDownload';
@@ -61,7 +60,6 @@ class App extends Component {
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'flex-start',
         alignItems: 'center'
       },
       appleDownloadContainer: {
@@ -95,7 +93,7 @@ class App extends Component {
         </div> */}
         <div className="appInfoContainer" style={styles.appInfoContainer}>
           <div className="phone" style={styles.phone}>
-            <img src="http://i.imgur.com/MtZyzkW.gif" style={styles.gif}/>
+            <img src="http://i.imgur.com/MtZyzkW.gif" style={styles.gif} alt="tc-demo"/>
           </div>
           <div className="downloadLinks" style={styles.downloadLinks}>
             <div className="titleContainer" style={styles.titleContainer}>
@@ -111,19 +109,9 @@ class App extends Component {
           </div>
         </div>
         <div className="footerContainer" style={styles.footerContainer}>
-          {/* <div className="footerContent" style={styles.footerContent}> */}
-            <div className="copyright" style={styles.footerContent}>Copyright © {copyrightYear} TinycrateHQ</div>
-            {/* <div className="slash">/</div> */}
-            <a href="#" className="toc" style={styles.footerContent}>Terms and Conditions</a>
-          {/* </div> */}
+          <div className="copyright" style={styles.footerContent}>Copyright © {copyrightYear} TinycrateHQ</div>
+          <a href="#" className="toc" style={styles.footerContent}>Terms and Conditions</a>
         </div>
-        {/* <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p> */}
       </div>
     );
   }
